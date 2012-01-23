@@ -31,14 +31,10 @@ bindkey "\e[F" end-of-line
 if [ "`uname | grep Linux`" = "Linux" ]; then
     alias ll='ls -alh --color --time-style=long-iso'
     alias lll='ls -alh --color --time-style=full-iso'
-fi
-
-if [ "`uname | grep SunOS`" = "SunOS" ]; then
+elif [ "`uname | grep SunOS`" = "SunOS" ]; then
     alias ll='ls -alh --color --time-style=long-iso'
     alias lll='ls -alh --color --time-style=full-iso'
-fi
-
-if [ "`uname | grep FreeBSD`" = "FreeBSD" ]; then
+elif [ "`uname | grep FreeBSD`" = "FreeBSD" ]; then
     alias ll='ls -alhG'
     alias lll='ls -alhG'
 fi
