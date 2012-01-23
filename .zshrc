@@ -21,9 +21,6 @@ SAVEHIST=1000
 unsetopt beep nomatch
 bindkey -e
 
-alias ll='ls -alh --color --time-style=long-iso'
-alias lll='ls -alh --color --time-style=full-iso'
-
 autoload -U promptinit && promptinit
 
 # key bindings
@@ -31,10 +28,19 @@ bindkey '\e[3~' delete-char
 bindkey "\e[H" beginning-of-line
 bindkey "\e[F" end-of-line
 
-if [ `uname | grep Linux` = "Linux" ]; then
+if [ "`uname | grep Linux`" = "Linux" ]; then
+    alias ll='ls -alh --color --time-style=long-iso'
+    alias lll='ls -alh --color --time-style=full-iso'
 fi
 
-if [ `uname | grep Linux` = "SunOS" ]; then
+if [ "`uname | grep SunOS`" = "SunOS" ]; then
+    alias ll='ls -alh --color --time-style=long-iso'
+    alias lll='ls -alh --color --time-style=full-iso'
+fi
+
+if [ "`uname | grep FreeBSD`" = "FreeBSD" ]; then
+    alias ll='ls -alhG'
+    alias lll='ls -alhG'
 fi
 
 # konata prompt theme
