@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/drag0n/.q3a/q3ut4'
+let g:netrw_dirhist_2='/home/drag0n/.q3a/q3ut4/screenshots'
+let g:netrw_dirhist_3='/home/drag0n/.q3a/q3ut4'
+let g:netrw_dirhist_4='/home/drag0n/Документы/IBM developerWorks/signals_2.files'
+let g:netrw_dirhist_5='/etc/udev'

@@ -1,0 +1,53 @@
+" Vim color file
+" Maintainer:	David Schweikert <dws@ee.ethz.ch>
+" Last Change:	2006 Apr 30
+
+hi clear
+
+let colors_name = "kona4kona"
+
+" Normal should come first
+hi Normal     guifg=Black  guibg=White
+hi Cursor     guifg=bg     guibg=fg
+hi lCursor    guifg=NONE   guibg=Cyan
+
+" Note: we never set 'term' because the defaults for B&W terminals are OK
+hi DiffAdd		ctermbg=LightBlue	    guibg=LightBlue
+hi DiffChange		ctermbg=LightMagenta	    guibg=LightMagenta
+hi DiffDelete		ctermfg=Blue		    ctermbg=LightCyan gui=bold guifg=Blue guibg=LightCyan
+hi DiffText		ctermbg=Red		    cterm=bold gui=bold guibg=Red
+hi Directory		ctermfg=DarkBlue	    guifg=Blue
+hi ErrorMsg		ctermfg=White		    ctermbg=DarkRed  guibg=Red	    guifg=White
+hi FoldColumn		ctermfg=DarkBlue	    ctermbg=Grey     guibg=Grey	    guifg=DarkBlue
+hi Folded		ctermbg=Grey		    ctermfg=DarkBlue guibg=LightGrey guifg=DarkBlue
+hi IncSearch		cterm=reverse		    gui=reverse
+hi LineNr		ctermfg=Brown		    guifg=Brown
+hi ModeMsg		cterm=bold		    gui=bold
+hi MoreMsg		ctermfg=DarkGreen	    gui=bold guifg=SeaGreen
+hi NonText		ctermfg=Blue		    gui=bold guifg=gray guibg=white
+hi Pmenu		guibg=LightBlue
+hi PmenuSel		ctermfg=White		    ctermbg=DarkBlue  guifg=White  guibg=DarkBlue
+hi Question		ctermfg=DarkGreen	    gui=bold guifg=SeaGreen
+hi Search		ctermfg=NONE		    ctermbg=Yellow guibg=Yellow guifg=NONE
+hi SpecialKey		ctermfg=DarkBlue	    guifg=Blue
+hi StatusLine		cterm=bold		    ctermbg=blue ctermfg=yellow guibg=gold guifg=blue
+hi StatusLineNC		cterm=bold		    ctermbg=blue ctermfg=black  guibg=gold guifg=blue
+hi Title		ctermfg=DarkMagenta	    gui=bold guifg=Magenta
+hi VertSplit		cterm=reverse		    gui=reverse
+hi Visual		ctermbg=NONE		    cterm=reverse gui=reverse guifg=Grey guibg=fg
+hi VisualNOS		cterm=underline,bold	    gui=underline,bold
+hi WarningMsg		ctermfg=DarkRed		    guifg=Red
+hi WildMenu		ctermfg=Black		    ctermbg=Yellow    guibg=Yellow guifg=Black
+
+" syntax highlighting
+hi Comment		cterm=none ctermfg=LightGreen	gui=none guifg=#008000
+hi Constant		cterm=none ctermfg=Red		gui=none guifg=#ff0000
+hi Identifier		cterm=none ctermfg=Yellow	gui=none guifg=#0000ff
+hi PreProc		cterm=none ctermfg=DarkCyan	gui=none guifg=#000080
+hi Special		cterm=none ctermfg=LightRed	gui=none guifg=#0000ff
+hi SpecialKey		cterm=none ctermfg=DarkGray	gui=none guifg=#909090
+hi Statement		cterm=none ctermfg=Blue		gui=none guifg=#0000ff
+hi Type			cterm=none ctermfg=Blue		gui=none guifg=#0000ff
+hi Typedef		cterm=none ctermfg=Yellow	gui=none guifg=Yellow
+
+" vim: sw=2

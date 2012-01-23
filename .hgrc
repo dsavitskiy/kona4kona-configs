@@ -1,0 +1,11 @@
+[ui]
+username = Dmitry Savitsky <dmitry.savitsky@nexenta.com>
+
+[extensions]
+color=
+rebase=
+hgk=
+hgview=
+
+[hgview]
+interface = qt # or raw or curses
