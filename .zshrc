@@ -39,6 +39,9 @@ elif [ "`uname | grep FreeBSD`" = "FreeBSD" ]; then
     alias lll='ls -alhG'
 fi
 
+# More convinient edit
+export WORDCHARS=""
+
 # konata prompt theme
 prompt_konata_setup () {
   prompt_konata_color1=${1:-'blue'}
